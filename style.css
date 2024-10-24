@@ -44,6 +44,7 @@ body{
 }
 .logo:hover{
     transform: scale(1.1);
+    color:#04fffb
 }
 .navbar a{
     font-size: 1.8rem;
@@ -166,7 +167,7 @@ span{
     position: relative;
 }
 .text-animation span::before{
-    content: 'Generative AI Student';
+    content: 'GPT Developer';
     color: var(--main-color);
     animation: words 20s infinite;
 }
@@ -188,23 +189,11 @@ span{
 @keyframes words{
     0%,
     20%{
-      content: 'Generative AI Student';
+      content: 'GPT Developer';
     }
     21%,
     40%{
-      content: "9th Class Student";
-    }
-    41%,
-    60%{
-      content: "Web Developer";
-    }
-    61%,
-    80%{
-      content: "Digital Marketer";
-    }
-    81%,
-    100%{
-      content: "Free Miner";
+      content: "GPT Developer";
     }
 }
 @keyframes typing{
@@ -240,10 +229,8 @@ span{
     background: var(--second-bg-color);
     color: white;
 }
-.about h2 span{
-    color: var(--main-color);
-    text-shadow: 0 0 50px var(--main-color);
-}
+
+
 .about-image{
     border-radius: 50%;
 }
@@ -280,20 +267,11 @@ span{
     position: relative;
 }
 .about-content .text-animation span::before{
-    content: 'Generative AI Student';
+    content: 'GPT Developer';
     color: var(--main-color);
     animation: words 20s infinite;
 }
-.about-content .text-animation span::after{
-    content: "";
-    background-color: var(--second-bg-color);
-    position: absolute;
-    width: calc(100% + 8px);
-    height: 100%;
-    border-left: 3px solid var(--second-bg-color);
-    right: -8px;
-    animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
-}
+
 
 ::-webkit-scrollbar{
     width: 15px;
